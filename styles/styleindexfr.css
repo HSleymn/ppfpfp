@@ -1,0 +1,70 @@
+html{
+    box-sizing: border-box;
+    background: url("../images/fond.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    zoom: 40%;
+  }
+
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+img  {
+  width: 100%;
+  display: flex;
+}
+
+.nav-bar{
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 1rem;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  display: flex;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.logo-nav {
+  max-width: 100px;
+}
+
+.nav-links{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding-right: 0.5rem;
+}
+
+.link a{
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.link a::after{
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  background-color: yellow;
+  transition: all 0.5s ease-out;
+}
+
+.link a:hover::after{
+   width: 90%;
+}
+
